@@ -1,0 +1,22 @@
+body {
+    background-color: rgba(125, 103, 21, 0.599);
+} 
+
+font {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Navigation bar*/
+.nav-content {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.nav-item {
+    padding: 2rem;
+}
+
+/*Images*/

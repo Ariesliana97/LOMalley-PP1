@@ -7,43 +7,43 @@ body {
 /*Navigation Bar*/
 .menu {
     position: fixed;
-    height: 100vh;
+    height: 150vh;
     background: rgb(248, 0, 0);
     width: 10vw;
-    box-shadow: 1px, 0, 2px, rgba(rgb(255, 255, 255));
-    transition: 1s;
+    box-shadow: 1px, 0, 2px, rgba(rgb(54, 54, 54));
+    transition: 0.5s;
 }
 
 :hover {
-    width: 40vw;
+    width: 20vw;
 }
 
-:hover ~ .container {
-    transform: perspective(80vw) rotateY(10deg) translateX(35vw) scaleY(1.2)
+:hover~.container {
+    transform: perspective(70vw) rotateY(5deg) translateX(30vw) scaleY(1.2)
 }
 
 :hover nav {
-    left: 20%;
+    left: 10%;
 }
 
 .container{
-	width: 90%;
+	width: 100%;
 	margin-left: 10vw;
-	background: #FDFDFD;
+	background: #fbfbfb;
 	transition: 1s;
 	transform-origin: left center;
-	color: #D2D2D0;
+	color: #565656;
 }
 
 .content{
-		padding: 100px 20%;
+		padding: 100px 15%;
 }
 
 nav {
 	position: absolute;
 	margin-top: 50%;
 	left: -1000px;
-	transition: .5s;
+	transition: 1s;
 }
 
 ul {
@@ -53,18 +53,18 @@ ul {
 }
 
 li{
-    line-height: 2em;
-	letter-spacing: .3em;
+    line-height: 5em;
+	letter-spacing: .2em;
 }
 
 a {
     font-size: 30px;
 	text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 600;
 }
 
-:hover {color: #eee;
+:hover {color: rgb(255, 255, 255);
 }
 
 /*Paragraphs*/

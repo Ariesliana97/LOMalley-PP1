@@ -1,6 +1,8 @@
 /*Main*/
-body {
-    background-color: #eee; 
+html body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
     box-sizing: content-box;
 }
 
@@ -10,61 +12,63 @@ body {
     height: 150vh;
     background: rgb(248, 0, 0);
     width: 10vw;
-    box-shadow: 1px, 0, 2px, rgba(rgb(54, 54, 54));
-    transition: 0.5s;
+    box-shadow: 1px 0 2px (rgba(54, 54, 54, 0.2));
+    transition: 1s;
 }
 
-:hover {
-    width: 20vw;
+.menu:hover {
+    width: 40vw;
 }
 
-:hover~.container {
-    transform: perspective(70vw) rotateY(5deg) translateX(30vw) scaleY(1.2)
+.menu:hover ~ .container {
+    transform: perspective(80vw) rotateY(10deg) translateX(35vw) scaleY(1.2)
 }
 
-:hover nav {
+.menu:hover nav {
     left: 10%;
 }
 
-.container{
+.container {
 	width: 100%;
 	margin-left: 10vw;
+    overflow: hidden;
+    box-sizing: border-box;
 	background: #fbfbfb;
 	transition: 1s;
 	transform-origin: left center;
 	color: #565656;
 }
 
-.content{
-		padding: 100px 15%;
+.container .content{
+	padding: 100px 0px 0px 20%;
 }
 
 nav {
 	position: absolute;
-	margin-top: 50%;
+	margin-top: 30%;
 	left: -1000px;
 	transition: 1s;
 }
 
-ul {
+nav ul {
     color: rgb(0, 0, 0);
 	text-transform: uppercase;
 	list-style-type: none;
 }
 
-li{
-    line-height: 5em;
-	letter-spacing: .2em;
+nav li{
+    line-height: 7em;
+	letter-spacing: .3em;
 }
 
-a {
+nav a {
     font-size: 30px;
 	text-decoration: none;
     color: black;
     font-weight: 600;
 }
 
-:hover {color: rgb(255, 255, 255);
+nav :hover {color: rgb(255, 255, 255);
 }
 
 /*Paragraphs*/
